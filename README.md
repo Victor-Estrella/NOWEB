@@ -1,73 +1,89 @@
-# React + TypeScript + Vite
+# NOWEB — Teste Técnico
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Teste Técnico criado pela NoWeb Publicidade, construída com **React**, **TypeScript**, **Tailwind CSS** e **Vite**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tecnologias
 
-## React Compiler
+- [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS v4](https://tailwindcss.com/)
+- [FontAwesome](https://fontawesome.com/) — ícones
+- [Lucide React](https://lucide.dev/) — ícones
+- [ViaCEP API](https://viacep.com.br/) — busca de endereço por CEP
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Pré-requisitos
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- [Node.js](https://nodejs.org/) — versão 18 ou superior
+- npm ou yarn
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Como rodar
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+**1. Clone o repositório**
+
+```bash
+git clone https://github.com/Victor-Estrella/NOWEB.git
+cd nowebTeste
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+**2. Instale as dependências**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+**3. Inicie o servidor de desenvolvimento**
+
+```bash
+npm run dev
+```
+
+Acesse em: [http://localhost:5173](http://localhost:5173)
+
+---
+
+
+## Estrutura do projeto
+
+```
+src/
+├── components/
+│   ├── Header/        
+│   ├── Hero/           
+│   ├── About/          
+│   ├── Gallery/       
+│   ├── OurMission/     
+│   ├── NearYou/        
+│   ├── Partners/      
+│   ├── View360/       
+│   ├── CTA/            
+│   └── Footer/         
+├── App.tsx
+└── main.tsx
+```
+
+---
+
+## Funcionalidades
+
+**Busca por CEP**
+
+O ícone de lupa no Header abre uma modal integrada com a API do [ViaCEP](https://viacep.com.br/). Digite qualquer CEP com ou sem traço (ex: `03323000` ou `03323-000`) para consultar automaticamente:
+
+- Logradouro
+- Complemento
+- Bairro
+- UF
+- Estado (localidade)
+
+Os campos retornados são somente leitura. É possível realizar múltiplas buscas sem fechar a modal.
+
+---
+
+## Autor
+Realizado pelo candidato Victor Henrique Estrella Carracci
