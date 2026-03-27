@@ -23,7 +23,7 @@ export default function View360() {
             {/* Imagem com bordas curvas */}
             <div className="overflow-hidden w-full">
                 <div className="absolute bg-white w-full h-17 [clip-path:ellipse(55%_150%_at_50%_-50%)]"/>
-                <img src={House360} alt="360 Camera View" className="w-full object-cover h-150" />
+                <img src={House360} alt="360 Camera View" className="w-full object-cover h-180" />
                 <div className="absolute bg-white w-full h-17 -mt-12 rotate-180 [clip-path:ellipse(60%_150%_at_50%_-50%)]"/>
             </div>
 

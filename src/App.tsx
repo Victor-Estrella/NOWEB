@@ -6,6 +6,7 @@ import Partners from './components/Partners'
 import View360 from './components/View360'
 import Footer from './components/Footer'
 import CTA from './components/CTA'
+import NearYou from './components/NearYou'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <About />
       <Partners />
       <View360 />
+      <NearYou />
       <CTA />
       <Footer />
     </div>
