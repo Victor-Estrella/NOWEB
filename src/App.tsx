@@ -1,12 +1,13 @@
-import About from './components/About'
-import Gallery from './components/Gallery'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import Partners from './components/Partners'
-import View360 from './components/View360'
-import Footer from './components/Footer'
-import CTA from './components/CTA'
-import NearYou from './components/NearYou'
+import About from './components/About/About'
+import Gallery from './components/Gallery/Gallery'
+import Header from './components/Header/Header'
+import Hero from './components/Hero/Hero'
+import Partners from './components/Partners/Partners'
+import View360 from './components/View360/View360'
+import Footer from './components/Footer/Footer'
+import CTA from './components/CTA/CTA'
+import NearYou from './components/NearYou/NearYou'
+import OurMission from './components/OurMission/OurMission'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <About />
       <Partners />
       <View360 />
+      <OurMission />
       <NearYou />
       <CTA />
       <Footer />
