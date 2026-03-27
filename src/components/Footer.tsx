@@ -7,7 +7,7 @@ export default function Footer() {
 
 
   return (
-    <footer className="bg-[#181818] text-white py-16 px-26 mt-20">
+    <footer className="bg-[#181818] text-white py-16 px-26">
       <div className="flex flex-col mx-auto">
         <div className="flex justify-between items-start mb-12">
           <h1 className="text-5xl font-semibold leading-tight max-w-xl">We Develop And<br />Create Modern Future</h1>

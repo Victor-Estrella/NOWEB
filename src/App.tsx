@@ -5,6 +5,7 @@ import Hero from './components/Hero'
 import Partners from './components/Partners'
 import View360 from './components/View360'
 import Footer from './components/Footer'
+import CTA from './components/CTA'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <About />
       <Partners />
       <View360 />
+      <CTA />
       <Footer />
     </div>
   )
