@@ -1,0 +1,46 @@
+import Partner1 from "../assets/logo1.svg";
+import Partner2 from "../assets/logo2.svg";
+import Partner3 from "../assets/logo3.svg";
+import Partner4 from "../assets/logo4.svg";
+import Partner5 from "../assets/logo5.svg";
+
+const stats = [
+    {
+        label: "Total Workers",
+        value: "400+",
+        description: "Lorem ipsum dolor sit amet consectetur. Ultrices augue elementum mollis quam magna elementum amet.",
+    },
+    {
+        label: "Years Experience",
+        value: "10.8",
+        description: "Lorem ipsum dolor sit amet consectetur. Ultrices augue elementum mollis quam magna elementum amet.",
+    },
+    {
+        label: "Real Estate Project",
+        value: "780+",
+        description: "Lorem ipsum dolor sit amet consectetur. Ultrices augue elementum mollis quam magna elementum amet.",
+    },
+];
+
+export default function Partners() {
+    return (
+        <section className="flex flex-col items-center py-16 bg-[#F6F6F4]">
+            <div className="flex flex-row justify-evenly w-full">
+                <img src={Partner1} alt="Partner 1" className="w-40 h-32 object-contain" />
+                <img src={Partner2} alt="Partner 2" className="w-40 h-32 object-contain" />
+                <img src={Partner3} alt="Partner 3" className="w-40 h-32 object-contain" />
+                <img src={Partner4} alt="Partner 4" className="w-40 h-32 object-contain" />
+                <img src={Partner5} alt="Partner 5" className="w-40 h-32 object-contain" />
+            </div>
+            <div className="flex flex-row w-full">
+                {stats.map((stat, index) => (
+                    <div key={index} className="flex flex-col gap-4 py-12 px-36 flex-1 border-r border-t border-[#D5D9D6]">
+                        <p className="text-2xl text-black">{stat.label}</p>
+                        <p className="text-[80px] font-semibold text-black">{stat.value}</p>
+                        <p className="text-xl text-[#A09C9C] max-w-96">{stat.description}</p>
+                    </div>
+                ))}
+            </div>
+        </section>
+    );
+}
