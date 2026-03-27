@@ -1,4 +1,4 @@
-import House360 from "../assets/house-360.jpg";
+import House360 from "./assets/house-360.jpg";
 
 const tabs = ["Home", "Interior Design", "Kitchen", "Swimming Pool", "Bedroom", "Bathroom"];
 

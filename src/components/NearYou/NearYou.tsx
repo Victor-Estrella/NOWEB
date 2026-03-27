@@ -1,4 +1,4 @@
-import CasaProxima from "../assets/house_near.jpg";
+import CasaProxima from "./assets/house_near.jpg";
 
 
 export default function NearYou() {
@@ -23,7 +23,7 @@ export default function NearYou() {
                 </div>
             </div>
             {/* Direito */}
-            <div className="relative bg-[url(./assets/background_near.jpg)] bg-cover bg-center bg-no-repeat w-142 h-89 rounded-3xl items-center justify-center flex flex-col gap-4">
+            <div className="relative bg-[url(./components/NearYou/assets/background_near.jpg)] bg-cover bg-center bg-no-repeat w-142 h-89 rounded-3xl items-center justify-center flex flex-col gap-4">
                 <div className="flex flex-col items-center">
                     <img src={CasaProxima} alt="Casa Próxima" className="w-26 h-26 rounded-full object-cover border-7 border-[#17412D]" />
                     <div className="-mt-1 w-0 h-0 border-l-10 border-l-transparent border-t-15 border-t-[#17412D] border-r-10 border-r-transparent"></div>

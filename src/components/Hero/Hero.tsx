@@ -1,7 +1,7 @@
 import { faArrowRight, faLocationDot, faBuilding, faMoneyBill1 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import MouseHero from "../assets/mouse_hero.svg";
-import UnionHero from "../assets/union_hero.svg";
+import MouseHero from "./assets/mouse_hero.svg";
+import UnionHero from "./assets/union_hero.svg";
 
 export default function Hero() {
     return (

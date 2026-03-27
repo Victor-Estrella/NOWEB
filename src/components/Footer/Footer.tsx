@@ -1,4 +1,4 @@
-import OkHand from "../assets/ok_icon.svg"
+import OkHand from "./assets/ok_icon.svg"
 import { faEnvelope, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Send } from 'lucide-react';

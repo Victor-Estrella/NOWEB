@@ -1,8 +1,8 @@
-import Partner1 from "../assets/logo1.svg";
-import Partner2 from "../assets/logo2.svg";
-import Partner3 from "../assets/logo3.svg";
-import Partner4 from "../assets/logo4.svg";
-import Partner5 from "../assets/logo5.svg";
+import Partner1 from "./assets/logo1.svg";
+import Partner2 from "./assets/logo2.svg";
+import Partner3 from "./assets/logo3.svg";
+import Partner4 from "./assets/logo4.svg";
+import Partner5 from "./assets/logo5.svg";
 
 const stats = [
     {
@@ -34,10 +34,10 @@ export default function Partners() {
             </div>
             <div className="flex flex-row w-full">
                 {stats.map((stat, index) => (
-                    <div key={index} className="flex flex-col gap-4 py-12 px-36 flex-1 border-r border-t border-[#D5D9D6]">
+                    <div key={index} className="flex flex-col w-full gap-4 py-12 px-30 flex-1 border-r border-t border-[#D5D9D6]">
                         <p className="text-2xl text-black">{stat.label}</p>
                         <p className="text-[80px] font-semibold text-black">{stat.value}</p>
-                        <p className="text-xl text-[#A09C9C] max-w-96">{stat.description}</p>
+                        <p className="text-xl text-[#A09C9C] w-87 max-w-87">{stat.description}</p>
                     </div>
                 ))}
             </div>

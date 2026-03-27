@@ -1,6 +1,6 @@
-import Gallery1 from "../assets/gallery-1.jpg";
-import Gallery2 from "../assets/gallery-2.jpg";
-import Gallery3 from "../assets/gallery-3.jpg";
+import Gallery1 from "./assets/gallery-1.jpg";
+import Gallery2 from "./assets/gallery-2.jpg";
+import Gallery3 from "./assets/gallery-3.jpg";
 
 export default function Gallery() {
     const tags = ["Furniture", "Home", "Rent", "100%", "Brand", "Trusted"];
