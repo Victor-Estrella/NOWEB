@@ -12,7 +12,7 @@ import OurMission from './components/OurMission/OurMission'
 function App() {
 
   return (
-    <div>
+    <div className="w-full overflow-x-hidden">
       <Header />
       <Hero />
       <Gallery />
