@@ -28,7 +28,7 @@ Teste Técnico criado pela NoWeb Publicidade, construída com **React**, **TypeS
 
 ```bash
 git clone https://github.com/Victor-Estrella/NOWEB.git
-cd nowebTeste
+cd NOWEB
 ```
 
 **2. Instale as dependências**
