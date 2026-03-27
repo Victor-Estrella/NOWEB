@@ -26,7 +26,7 @@ export default function Partners() {
     return (
         <section className="flex flex-col items-center py-10 lg:py-16 xl:pb-0 bg-[#F6F6F4]">
             {/* Logos */}
-            <div className="flex flex-row flex-wrap justify-evenly w-full gap-y-4 px-6 lg:px-0">
+            <div className="flex flex-row flex-wrap gap-x-5 justify-evenly w-full gap-y-4 px-6 lg:px-0">
                 <img src={Partner1} alt="Partner 1" className="w-24 lg:w-40 h-20 lg:h-32 object-contain" />
                 <img src={Partner2} alt="Partner 2" className="w-24 lg:w-40 h-20 lg:h-32 object-contain" />
                 <img src={Partner3} alt="Partner 3" className="w-24 lg:w-40 h-20 lg:h-32 object-contain" />
