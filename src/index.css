@@ -6,4 +6,5 @@
 
 body {
   backface-visibility: hidden;
+  overflow-x: hidden;
 }
