@@ -7,7 +7,7 @@ export default function Hero() {
     return (
         <section className="flex flex-col px-6 sm:px-12 md:px-24 py-10 md:py-16 gap-8 md:gap-12">
             {/* Cima */}
-            <div className="flex flex-col lg:flex-row justify-between items-stretch gap-8 lg:gap-0">
+            <div className="flex flex-col xl:flex-row justify-between items-stretch gap-8 xl:gap-0">
                 {/* Esquerda */}
                 <div className="flex flex-col gap-6 max-w-3xl">
                     <div className="flex items-center gap-3">
@@ -15,7 +15,7 @@ export default function Hero() {
                         <p className="text-base md:text-xl text-[#79797B]">Your Gateway To Dream Homes</p>
                     </div>
 
-                    <h1 className="text-3xl sm:text-4xl md:text-6xl font-semibold leading-tight max-w-full">
+                    <h1 className="text-4xl md:text-6xl font-semibold leading-tight max-w-full">
                         It's About Finding A Place Where Memories Are Made And Dreams Are Realized
                     </h1>
 
@@ -25,7 +25,7 @@ export default function Hero() {
                 </div>
 
                 {/* Direita */}
-                <div className="flex flex-row lg:flex-col items-center md:items-end justify-between md:justify-between">
+                <div className="flex flex-row xl:flex-col items-center md:items-end justify-between md:justify-between">
                     <div className="flex items-center gap-3">
                         <div className="w-10 h-10 md:w-14 md:h-14 rounded-full border border-black flex items-center justify-center z-10 bg-white">
                             <img src={MouseHero} alt="Mouse" className="w-5 md:w-auto" />
@@ -43,7 +43,7 @@ export default function Hero() {
 
             {/* Baixo — Search bar */}
             {/* Desktop: fila única */}
-            <div className="hidden lg:flex items-center rounded-full border border-[#DCDADA] shadow-sm overflow-hidden">
+            <div className="hidden xl:flex items-center rounded-full border border-[#DCDADA] shadow-sm overflow-hidden">
                 <div className="flex items-center gap-3 px-15 py-5 flex-1">
                     <div className="w-10 h-10 rounded-full border border-[#DCDADA] flex items-center justify-center">
                         <FontAwesomeIcon icon={faLocationDot} className="text-[#656971] text-sm" />
@@ -85,7 +85,7 @@ export default function Hero() {
             </div>
 
             {/* Mobile/Tablet: cards empilhados */}
-            <div className="flex lg:hidden flex-col gap-3 border border-[#DCDADA] rounded-3xl shadow-sm overflow-hidden p-2">
+            <div className="flex xl:hidden flex-col gap-3 border border-[#DCDADA] rounded-3xl shadow-sm overflow-hidden p-2">
                 {[
                     { icon: faLocationDot, label: "Location", sub: "Search Location" },
                     { icon: faBuilding, label: "Select Type", sub: "Postcode, town, or area" },
