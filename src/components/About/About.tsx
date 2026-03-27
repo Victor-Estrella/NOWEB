@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function About() {
     return (
-        <section className="flex flex-row justify-between px-24 py-16 items-stretch">
+        <section className="flex flex-col lg:flex-row justify-between lg:px-6 px-12 md:px-24 py-10 md:py-16 items-stretch gap-10 md:gap-0">
             {/* Esquerda */}
-            <div className="flex flex-col gap-16 justify-around">
+            <div className="flex flex-col gap-10 md:gap-16 justify-around">
                 <div className="flex items-center">
                     <button className="bg-[#D3EDD8] text-[#17412D] font-medium px-8 py-3 rounded-full text-lg cursor-pointer transition-transform duration-200 hover:scale-105 inline-block">
                         About Us
@@ -22,8 +22,8 @@ export default function About() {
             </div>
 
             {/* Direita */}
-            <div className="relative max-w-221 p-8 rounded-lg self-center">
-                <p className="text-3xl bg-linear-to-b from-[#1D2128] to-[#AEAEAE]  bg-clip-text text-transparent leading-relaxed">
+            <div className="relative w-full md:max-w-221 lg:p-4 p-6 md:p-8 rounded-lg self-center">
+                <p className="lg:text-xl text-2xl md:text-3xl bg-linear-to-b from-[#1D2128] to-[#AEAEAE] bg-clip-text text-transparent leading-relaxed">
                     Lorem ipsum dolor sit amet consectetur. Ultrices augue elementum mollis quam magna elementum amet. Iaculis faucibus fames lobortis nunc eget turpis eget quis amet. Bibendum aliquet et id enim molestie.
                 </p>
             </div>
